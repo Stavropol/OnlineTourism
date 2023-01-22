@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="asserts/itc-slider.css">
+    <title>toursonline</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+                'Segoe UI Symbol';
+        }
+
+        *,
+        *::before,
+        *::after {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding-bottom: 0;
+            min-height:inherit;
+        }
+
+        .itc-slider__items {
+            counter-reset: slide;
+        }
+
+        .itc-slider__item {
+            flex: 0 0 100%;
+            max-width: 100%;
+            min-width: inherit;
+            counter-increment: slide;
+            height: flex;
+            position: relative;
+            padding-top: 20px;
+        }
+
+        .itc-slider__item::before {
+            content: counter(slide) "/5";
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: #fff;
+            font-style: italic;
+            font-size: 32px;
+            font-weight: bold;
+            display: block;
+        }
+    </style>
+    <script defer src="asserts/itc-slider.js"></script>
+
+</head>
+
+<body>
+    <div class="freakz">
+        <h1 class="read">Онлайн туризм</h1>
+        <p class="fst" class="read">Виртуальные путешествия по всему миру</p>
+        <div class="overlay"></div>
+    </div>
+    <div class="st2">
+        <h2 class="stOP">Как побывать во всём мире, не вставая с дивана?</h2>
+        <p class="st1">Всё больше людей пробуют онлайн путешествия, ведь они позволяют прочувствовать атмосферу почти любого уголка земного шара. Музеи, театры, национальные парки и мемориальные достопримечательности - всё это доступно в турах, предоставляемых нашей компанией</p> <br>
+
+
+
+
+
+        <div class="container">
+            <div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="false">
+                <div class="itc-slider__wrapper">
+                    <div class="itc-slider__items">
+                        <div class="itc-slider__item">
+                            <h2>Консервативный Лондон</h2>
+                            <p class="st1">Лондон полон истории: здесь Средневековье и Викторианская эпоха уживаются с роскошным и энергичным современным миром. Это место, в котором путешественники могут перемещаться во времени, гуляя по городу, а устав, поступить так же, как лондонцы, то есть выпить чашечку чая.                                                        </p>
+                            <img class = "img1" src="source/towerbridge.jpg" alt="">
+                        </div>
+                        <div class="itc-slider__item">
+                            <h2>Величественные массивы Альп</h2>
+                            <p class="st1">Регион Альпы — это настоящий рай как для ценителей природных красот первозданной красоты и отдыха на свежем воздухе, так и любителей горных пейзажей и острых ощущений! Будь то прогулка по заповеднику Вануаз, катание на лыжах в горах Бож или поход к массиву Монблан — незабываемые впечатления от отдыха гарантированы!         </p>
+                            <img class = "img1" src="source/alp.jpg" alt="">
+                        </div>
+                        <div class="itc-slider__item">
+                            <h2>Вдохновляющая Венеция</h2>
+                            <p class="st1">Упоительная и такая странная — одновременно помпезная и пошарпанная — Венеция сводит с ума. Здесь хочется быть влюбленным или немедля попасть под стрелу Амура, беспрестанно целоваться и ходить в обнимку по самым узким и облезлым улочкам, шептать глупости и судорожно вцепляться в руку спутника при виде заката на Сан-Марко.  </p>
+                            <img class = "img1" src="source/venice.jpg" alt="">
+                        </div>
+                        <div class="itc-slider__item">
+                            <h2>Строгий Милан</h2>
+                            <p class="st1">Туристы, стремящиеся в Рим, Флоренцию и Венецию, часто пренебрегают Миланом, одной из столиц мировой моды. Однако этот великолепный город готов многое предложить, в том числе легендарный Миланский собор, крупнейший и, возможно, великолепнейший готический собор в мире.                                                       </p>
+                            <img class = "img1" src="source/milan.jpg" alt="">
+                        </div>
+                        <div class="itc-slider__item">
+                            <h2>Волшебная Пиза</h2>
+                            <p class="st1">Сфотографируйтесь так, как будто вы поддерживаете Пизанскую башню. Мы никому не расскажем; и ваша репутация искушенного туриста не будет испорчена. Затем заберитесь на саму башню, пройдя 300 ступеней, и посмотрите на мир под новым углом, или посетите Национальный музей Сан-Маттео и кладбище Кампосанто.                </p>
+                            <img class = "img1" src="source/italy.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <button class="itc-slider__btn itc-slider__btn_prev"></button>
+                <button class="itc-slider__btn itc-slider__btn_next"></button>
+                <ol class="itc-slider__indicators">
+                    <li class="itc-slider__indicator" data-slide-to="0"></li>
+                    <li class="itc-slider__indicator" data-slide-to="1"></li>
+                    <li class="itc-slider__indicator" data-slide-to="2"></li>
+                    <li class="itc-slider__indicator" data-slide-to="3"></li>
+                    <li class="itc-slider__indicator" data-slide-to="4"></li>
+                </ol>
+            </div>
+        </div>
+        <p class="middle">Оставьте заявку на персональный подбор туров, наш менеджер свяжется с вами через несколько минут</p>
+    </div>
+
+
+        
+
+    <div id="login">
+        <div class="body">
+        <p class="hh1"><strong>Персональный подбор туров</strong></p>
+
+        <form action="#" method="get">
+            <fieldset>
+            <p class="pp1"><input id="name" type="text" name="name" required  placeholder="Имя"></p>
+            <p class="pp1"><input id="email" type="text" name="email" required  placeholder="Email"></p>
+            <p class="pp1"><input id="place" type="text" name="place" required  placeholder="Куда хотите отправиться"></p>
+            <p class="pp1"><input id="submitButton" type="submit" value="Отправить"></p>
+            </fieldset>
+        </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="fps">
+            <p class="set">Телефон: +7 (495) 532-30-05
+            </p>
+            <p class="set">email: bringthemiddle@gmail.com</p>
+
+
+            <div class="noIcy"><p class="set1">Горячая линия:</p>
+            <p class="vk"> <a href="https://vk.com/iconmatthew"><img class="vkimg" src="source/vk.jpeg" alt=""></a></p></div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body></html>
