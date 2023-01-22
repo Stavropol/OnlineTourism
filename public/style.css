@@ -1,0 +1,276 @@
+body{
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 100%;
+    min-width: 320px;
+    min-height: 100%;
+    position: relative;
+    display: block;
+    background: white;
+    background: #f4f4f4;
+    margin: 0;
+    max-height: none;
+    max-width: 100%;
+}
+
+.freakz{
+    background-image: url(source/hollywood.jpeg);
+    min-height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding: 24px 0;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.overlay{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+h1{
+    font-size: calc(23px + 45 * (100vw / 1280));
+    margin-left: calc(100vw/25);
+    margin-right: calc(100vw/25);
+    line-height: 71px;
+    font-weight: 800;
+    margin-top: 16vw;
+    position: relative;
+    z-index: 2;
+}
+
+.fst{
+    font-size: calc(13px + 15 * (100vw / 1280));
+    margin-left: calc(100vw/25);
+    margin-right: calc(100vw/25);
+    line-height: 32px;
+
+    line-height: 35px;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+}
+
+
+.st2{
+    padding-left:  calc(100vw/25);
+    padding-right: calc(100vw/25);
+    text-align: center;
+    display: block;
+    margin-top: 5%;
+    margin-left: inherit;
+    margin-right: inherit;
+    line-height: 30px;
+    font-size: calc(12px + 7 * (100vw / 1280));
+    font-weight: 500;
+}
+
+h2{
+    margin-top: 5%;
+    font-weight: 700;
+    text-align: center;
+}
+
+footer {
+    margin-top: 5%;
+    padding: 0;
+    width: 100%;
+    color: whitesmoke;
+    padding: 32px 60px;
+    background-color: #333333;
+    background-position: right bottom;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.set{
+    flex-wrap: nowrap;
+    vertical-align: center;
+    font-size: calc(15px + 2 * (100vw / 1280));
+    margin-left: calc(100vw/70);
+    margin-right: calc(100vw/70);
+    display: inline-block;
+    height: inherit;
+    width: 100vw/7;
+
+}
+
+.img1 {
+    padding-bottom: 0;
+    max-width: 900px;
+    background: #ccc;
+    margin-top: 2%;
+    width: 100%;
+    margin-top: 0.5;
+}
+
+.st1{
+    padding: 0.5%;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 925px;
+    margin-top: 0.5%;
+    font-weight: 400;
+    text-align: justify;
+
+}
+
+.fps {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1px ridge black;
+}
+
+.vk {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.vkimg {
+    width:50px;
+    height: 50px;
+}
+
+
+
+
+
+.set1 {
+    flex-wrap: nowrap;
+    vertical-align: center;
+    font-size: calc(15px + 2 * (100vw / 1280));
+    margin-right: calc(100vw/70);
+
+    display: inline-block;
+    height: inherit;
+    width: 100vw/7;
+}
+
+.noIcy {
+    margin-left: calc(100vw/70);
+    margin-right: calc(100vw/70);
+    width: 100vw/7;
+    display: inline-block;
+    height: inherit;
+}
+
+
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- https://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(https://weloveiconfonts.com/api/?family=fontawesome);
+
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- https://meyerweb.com/eric/tools/css/reset/ ---------- */
+
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+.body {
+  color: #5a5656;
+  display: grid;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  place-items: center;
+  width: 100vw;
+}
+
+.aa { text-decoration: none; }
+
+.hh1 { font-size: 1em;
+
+}
+
+.hh1, pp1 {
+  margin-bottom: 10px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.uppercase { text-transform: uppercase; }
+
+/* ---------- LOGIN ---------- */
+
+#login {
+    min-width: 270px;
+    text-align: center;
+    display: block;
+
+    margin-left: inherit;
+    margin-right: inherit;
+
+}
+
+form fieldset input[type="text"],
+input[type="password"] {
+  appearance: none;
+  background: #e5e5e5;
+  border: none;
+  border-radius: 3px;
+  color: #5a5656;
+  font-family: inherit;
+  font-size: 14px;
+  height: 50px;
+  outline: none;
+  padding: 0px 10px;
+  width: calc(260px + 50  *(100vw/1280));
+
+}
+
+form fieldset input[type="submit"] {
+  appearance: none;
+  background-color: #333333;
+  border: none;
+  border-radius: 3px;
+  color: #f4f4f4;
+  cursor: pointer;
+  font-family: inherit;
+  height: 50px;
+  text-transform: uppercase;
+  width: calc(260px + 50  *(100vw/1280));
+}
+
+form fieldset a {
+  color: #5a5656;
+  font-size: 10px;
+}
+
+
+
+
+.middle {
+    padding: 0.5%;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 925px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+    font-size: calc(12px + 7 * (100vw / 1280));
+}
